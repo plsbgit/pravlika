@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Model Example</title>
+  <script>
+    function handleMouseOver() {
+      document.getElementById("message").textContent = "Mouse Over Event";
+    }
+
+    function handleMouseUp() {
+      document.getElementById("message").textContent = "Mouse Up Event";
+    }
+
+    function handleClick() {
+      document.getElementById("message").textContent = "Click Event";
+    }
+
+    function handleFocus() {
+      document.getElementById("message").textContent = "Focus Event";
+    }
+
+    function handleBlur() {
+      document.getElementById("message").textContent = "Blur Event";
+    }
+  </script>
+</head>
+<body>
+  <h1>Event Model Example</h1>
+
+  <div>
+    <button onmouseover="handleMouseOver()" onmouseup="handleMouseUp()" onclick="handleClick()" onfocus="handleFocus()" onblur="handleBlur()">Button</button>
+  </div>
+
+  <p id="message"></p>
+</body>
+</html>
