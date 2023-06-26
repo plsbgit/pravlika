@@ -1,0 +1,62 @@
+a
+
+<html>
+<head>
+<title>File Collection</title>
+</head>
+<body>
+<input type="file" id="fileInput" multiple>
+<button onclick="handleFiles()">Process Files </button>
+<script>
+function  handleFiles()
+{
+var fileInput=document.getElementbyId('FileInput');
+var file=fileInput.files;
+if(files.length==0)
+{
+console.log('no. of files selected');
+}
+for(var i=0;i<files.length;i++){
+var file=files[i];
+console.log('file:',file.name);
+console.log('size:',file.size,'bytes');
+}
+}
+</script>
+</body>
+</html>
+
+b
+<html>
+<head>
+<script>
+let numb=document.links.length;
+document.getElementById("demo).innerHTML = numb;
+</script>
+</head>
+<body>
+<h1> The Document object property </h1>
+<h2> The links Property</h2>
+<p><a href="https://www.google.com">Google </a></p>
+<p> <a href="https://www.youtube.com"> Youtube </a></p>
+<p id="demo" ></p> <p> The no-of links indocument is: </P>
+</body>
+</html>
+
+c
+<html>
+<head>
+</head>
+<body>
+<h1> The Document object </h1>
+<h2> The Image property </h2>
+<img src="image1.jpg" alt="Car" width= 150" height: "110">
+<img src="images.jpg" alt="Bite" width="153" height = "120">
+<p> The no. of images is: </p>
+<p id="demo"></p>
+<script>
+let numb = document imoge.length;
+document.getElementById("demo").innerHTML = numb;
+</script>
+</body>
+</html>
