@@ -1,0 +1,86 @@
+1.
+<html>
+<head>
+<title> my page </title>
+</head>
+<body background="B.jpg" align="center"><img src="https://www.campusoption.com/images/colleges/gallery/08_02_17_051525_BEC.jpg" height="300"
+width="800">
+<h1 align="center" style="color:pink; font-family:Old English Text Mt">
+Bapatla Engineering College </h1>
+<h3 align="center" style="color:white"> (autonomus) <hr></h3>
+<marquee style="color:RED ; font-size:1.8em" > BEC </marquee>
+<h3 align="center" style="color:green" > Bapatla - 522101 </h3>
+<h3 align="center" style="color:blue" > www.becbapatla.ac.in </h3>
+<h3 align="center" style="color:white" > Ph.No : 08643-224244 </h3>
+<h2 align="center" >
+<a href="z:\wt lab\22-11-2017\student.html" style="color:BLACK"> Student
+</a></h2>
+<h3 style="color:BLACK" align="center"> Bapatla group institutions arelocated at
+IT,CSE,EEE,ECE,MECHANICAL,CIVIL,EIE,CHEMICAL...<BR>and some more courses
+offer in Bapatla engineering college.</p></h3>
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2a.
+<!DOCTYPE html>
+<html>
+<head>
+ <script>
+ function calculateFactorial() {
+ var num = prompt("Enter a number:");
+ var result = 1;
+ if (num === null || isNaN(num)) {
+ return "Invalid input. Please enter a valid number.";
+ }
+ num = parseInt(num);
+ for (var i = 1; i <= num; i++) {
+ result *= i;
+ }
+ return result;
+ }
+ var factorial = calculateFactorial();
+ document.write("Factorial: " + factorial);
+ </script>
+</head>
+<body>
+</body>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2b.
+<html>
+<script>
+function binary_search(array,target){
+left=0;
+right=array.length-1;
+while(left<=right){
+var mid=Math.floor((left+right)/2);
+if(array[mid]===target){
+return mid;
+}
+if(array[mid]<target){
+left=mid+1;
+}
+else{
+right=mid-1;
+}
+}
+return -1;
+}
+var length=parseInt(prompt("Enter the length of the array:"));
+var array=[];
+for(let i=0;i<length;i++){
+var element=parseInt(prompt("Enter element of index" +i+ ":"));
+array.push(element);
+}
+var targetElement=parseInt(prompt("Enter the target element:"));
+var resultIndex=binary_search(array,targetElement);
+if(resultIndex!==-1){
+document.writeln(`Found ${targetElement} at index ${resultIndex}`);
+}
+else{
+document.writeln(`${targetElement} not found`);
+}
+</script>
+</html>
